@@ -37,17 +37,23 @@
             GAYA
         </h3>
     </div>
+    <div id="map_canvas"></div>
     <div data-role="content">
-      <div id="map_canvas"></div>
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madison, WI&amp;zoom=14&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
-        width="288" height="200">
-        <div style=" text-align:center">
-            <img style="width: 200px; height: 200px" src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg">
-        </div>
+
+<div id="flickable" style="overflow:scroll">
+  <ul>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+  </ul>
+  <div style="clear:both;"></div>
+</div>      
     </div>
 </div>
 
-  <script src="./map.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
+<script src="jquery.flickable.js"></script>
+<script src="map.js"></script>
+<script src="top.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
 </body>
 </html>
