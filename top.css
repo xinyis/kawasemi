@@ -26,3 +26,11 @@
 .flickable .ui-flickable-container {
     cursor: pointer;
 }
+
+.jCarousel {
+    width: 100%;
+}
+.jCarousel img {
+    height: 100px;
+    width: 100px;
+}
