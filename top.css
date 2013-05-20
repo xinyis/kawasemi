@@ -10,14 +10,12 @@
 }
 #flickable ul {
     list-style: none;
-    width:854px;
     margin: 0;
     padding: 5px;
 }
 #flickable ul li {
     background-color: #EEE;
     border: 1px solid #CCC;
-    height: 100px;
     width: 100px;
     margin: 5px;
     padding: 0px;
@@ -26,7 +24,6 @@
 #flickable ul li img {
     margin: 0px;
     height: 100px;
-    width: 100px;
 }
 
 #flickable .ui-flickable-container {
