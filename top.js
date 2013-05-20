@@ -7,5 +7,7 @@
 
     $(function() {
         $('#flickable').flickable();
+
+        alert('aa');
     });
 })();
