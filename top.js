@@ -6,6 +6,6 @@
     "use strict";
 
     $(function() {
-        $('#flickable').flickable();
+        $('.flickable').flickable();
     });
 })();

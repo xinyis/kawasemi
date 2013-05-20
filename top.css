@@ -2,19 +2,19 @@
     height: 250px;
 }
 
-#flickable {
+.flickable {
     border: 1px solid #CCC;
-    width: 480px;
+    width: 320px;
     height: 155px;
     overflow: auto;
 }
-#flickable ul {
+.flickable ul {
     list-style: none;
     width:854px;
     margin: 0;
     padding: 5px;
 }
-#flickable ul li {
+.flickable ul li {
     background-color: #EEE;
     border: 1px solid #CCC;
     height: 100px;
@@ -23,6 +23,6 @@
     padding: 5px;
     float: left;
 }
-#flickable .ui-flickable-container {
+.flickable .ui-flickable-container {
     cursor: pointer;
 }
