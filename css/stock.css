@@ -1,1 +1,12 @@
-
+#comment_textarea {
+  height: 150px;
+}
+.tool_div {
+  text-align: right;
+}
+.tool_div a{
+  height: 40px;
+}
+.camera_button_div {
+  margin: 50px 20px 50px 20px;
+}
