@@ -10,7 +10,7 @@
   
   <!-- Extra Codiqa features -->
   <link rel="stylesheet" href="codiqa.ext.css">
-  <link rel="stylesheet" href="css/checkin.css">
+  <link rel="stylesheet" href="top.css">
   
   <!-- jQuery and jQuery Mobile -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
@@ -18,32 +18,44 @@
 
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
-   
 </head>
+
 <body>
 <!-- Home -->
 <div data-role="page" id="page1">
     <div data-theme="a" data-role="header">
-        <a data-role="button" href="stock.html" class="ui-btn-left">
-            Cancel
+        <a data-role="button" href="#page1" class="ui-btn-left">
+            +
+        </a>
+        <a data-role="button" href="#page1" class="ui-btn-left">
+            +
+        </a>
+        <a data-role="button" href="#page1" class="ui-btn-right">
+            HOME
         </a>
         <h3>
             GAYA
         </h3>
     </div>
+    <div id="map_canvas"></div>
     <div data-role="content">
-      <div id="map_canvas"></div>
-	<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
-	  <li><a href="#page1">タイキッチンパクチー</a></li>
-	  <li><a href="#page1">おじーの家</a></li>
-	  <li><a href="#page1">三途の川</a></li>
-	  <li><a href="#page1">ひらかたパーク</a></li>
-	  <li><a href="#page1">ガンジス川</a></li>
-        </ul>
-        <a data-role="button" data-icon="plus" href="#page1" class="ui-btn-center">スポットを追加</a>
+
+<div id="flickable">
+  <ul>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+    <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li>
+  </ul>
+  <div style="clear:both;"></div>
+</div>      
     </div>
 </div>
+
+<script src="jquery.flickable.js"></script>
 <script src="map.js"></script>
+<script src="top.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
 </body>
 </html>
