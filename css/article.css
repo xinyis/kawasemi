@@ -5,7 +5,7 @@ iframe {
 }
 
 iframe.map { 
-  height: 250px;
+  height: 200px;
   border: none;
   frameborder: 0;
   scrolling: "no";
@@ -21,34 +21,32 @@ iframe.map {
   width:100%;
 }
 
-.article_main{
-  position: absolute;
-  top: 320px; 
-  padding:8px; 
-  
-}
-
-
 .article_map{
   position: fixed;
   top: 60px;
   left: 15px;
-  
-
 }
 
+.article_main{
+  position: absolute;
+  top: 280px; 
+  height: 350px;
+  width: 380px;
+  text-align: center;
+  overflow: scroll;
+}
 
 .stock_img{
    width: 320px;
    height: 180px;
    padding: 5px 5px 5px 0;
-   
+   text-align: center; 
 }
 
 .stock{
    width: 350px;
    padding_top: 500px;
-
+   
 }
 
 .stock_txt{
