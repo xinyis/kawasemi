@@ -21,7 +21,7 @@
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
    
 </head>
-<body>
+<body onload="document.stock_form.comment.focus()">
 <!-- Home -->
 <div data-role="page" id="page1">
   <div data-theme="a" data-role="header">
@@ -36,8 +36,8 @@
     </h3>
   </div>
   <div data-role="content">
-    <div style=" text-align:center">
-      <textarea id="comment_textarea"></textarea>
+    <form name="stock_form">
+      <textarea id="comment_textarea" name="comment"></textarea>
       <div class="ui-grid-a">
 	<div class="ui-block-a tool_div" data-role="controlgroup" data-type="horizontal">
 	  <input type="button" data-role="button" href="checkin.html" data-inline="true" data-mini="true" value="写">
@@ -55,7 +55,7 @@
 	  <a data-role="button" href="" class="ui-btn-center">ライブラリから選択</a>
 	</div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 </body>
