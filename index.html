@@ -37,19 +37,51 @@
     </div>
     <div id="map_canvas"></div>
 
-    <script src="jquery.flickable.js"></script>
-    <script src="top.js"></script>
-
-    <div class="flickable">
-      <ul>
-        <li>tset</li>
-        <li>tset</li>
-        <li>tset</li>
-        <li>tset</li>
-        <!-- <li><img src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg" /></li> -->
+    <style type="text/css">
+      #flickable1 {
+        border: 1px solid #CCC;
+        width: 480px;
+        height: 155px;
+        overflow: auto;
+      }
+      #flickable1 ul {
+        list-style: none;
+        width:854px;
+        margin: 0;
+        padding: 5px;
+      }
+      #flickable1 ul li {
+        background-color: #EEE;
+        border: 1px solid #CCC;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        padding: 5px;
+        float: left;
+      }
+      #flickable1 .ui-flickable-container {
+        cursor: pointer;
+      }
+    </style>
+    
+    <script type="text/javascript">
+      $(function() {
+          $('#flickable1').flickable();
+      });
+    </script>
+    
+    <div id="flickable1">
+      <ul> 
+        <li>Content 1</li>
+        <li>Content 2</li>
+        <li>Content 3</li>
+        <li>Content 4</li>
+        <li>Content 5</li>
+        <li>Content 6</li>
+        <li>Content 7</li>
       </ul>
       <div style="clear:both;"></div>
-    </div>   
+    </div>
     <div data-role="content">
 
     </div>
