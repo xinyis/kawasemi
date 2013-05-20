@@ -4,7 +4,7 @@
 
 #flickable {
     border: 1px solid #CCC;
-    width: 480px;
+    width: 100%;
     height: 155px;
     overflow: auto;
 }
