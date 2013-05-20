@@ -4,8 +4,9 @@
 
 #flickable {
     border: 1px solid #CCC;
+    margin-top: 10px;
     width: 100%;
-    height: 110px;
+    height: 190px;
     overflow: auto;
 }
 #flickable ul {
@@ -17,14 +18,16 @@
 #flickable ul li {
     background-color: #EEE;
     border: 1px solid #CCC;
-    width: 100px;
+    width: 150px;
+    height: 150px;
     margin: 5px;
     padding: 0px;
     float: left;
 }
 #flickable ul li img {
     margin: 0px;
-    height: 100px;
+    width:  150px;
+    height: 150px;
 }
 
 #flickable .ui-flickable-container {
