@@ -23,14 +23,8 @@
 <!-- Home -->
 <div data-role="page" id="page1">
     <div data-theme="a" data-role="header">
-        <a data-role="button" href="#page1" class="ui-btn-left">
-            +
-        </a>
-        <a data-role="button" href="#page1" class="ui-btn-left">
-            +
-        </a>
-        <a data-role="button" href="#page1" class="ui-btn-right">
-            HOME
+        <a data-role="button" href="stock.html" class="ui-btn-left">
+            Cancel
         </a>
         <h3>
             GAYA
@@ -39,9 +33,14 @@
     <div data-role="content">
         <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madison, WI&amp;zoom=14&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
         width="288" height="200">
-        <div style=" text-align:center">
-            <img style="width: 200px; height: 200px" src="http://farm9.staticflickr.com/8383/8667953549_762607f16a_m.jpg">
-        </div>
+	<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+	  <li><a href="#page1">タイキッチンパクチー</a></li>
+	  <li><a href="#page1">おじーの家</a></li>
+	  <li><a href="#page1">三途の川</a></li>
+	  <li><a href="#page1">ひらかたパーク</a></li>
+	  <li><a href="#page1">ガンジス川</a></li>
+        </ul>
+        <a data-role="button" data-icon="plus" href="#page1" class="ui-btn-center">スポットを追加</a>
     </div>
 </div>
 </body>
