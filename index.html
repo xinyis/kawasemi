@@ -10,6 +10,7 @@
   
   <!-- Extra Codiqa features -->
   <link rel="stylesheet" href="codiqa.ext.css">
+  <link rel="stylesheet" href="top.css">
   
   <!-- jQuery and jQuery Mobile -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
@@ -17,6 +18,8 @@
 
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  <script src="./map.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
    
 </head>
 <body>
@@ -37,6 +40,7 @@
         </h3>
     </div>
     <div data-role="content">
+      <div id="map_canvas"></div>
         <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madison, WI&amp;zoom=14&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
         width="288" height="200">
         <div style=" text-align:center">
