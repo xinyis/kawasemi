@@ -10,6 +10,7 @@
 }
 #flickable ul {
     list-style: none;
+    width: 850px;
     margin: 0;
     padding: 5px;
 }
