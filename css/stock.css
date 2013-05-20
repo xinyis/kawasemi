@@ -2,9 +2,15 @@
   height: 150px;
 }
 .tool_div {
+  text-align: left;
+}
+.stock_button_div{
   text-align: right;
 }
-.tool_div a{
+.photo_button{
+  float: left;
+}
+.checkin_button{
 
 }
 .camera_button_div {
