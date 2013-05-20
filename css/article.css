@@ -1,0 +1,57 @@
+/* Put your custom CSS here */
+
+iframe {
+   width: 370px;
+}
+
+iframe.map { 
+  height: 250px;
+  border: none;
+  frameborder: 0;
+  scrolling: "no";
+  marginheight: 0;
+  marginwidth: 0; 
+}
+
+
+.menu{
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width:100%;
+}
+
+.article_main{
+  position: absolute;
+  top: 320px; 
+  padding:8px; 
+  
+}
+
+
+.article_map{
+  position: fixed;
+  top: 60px;
+  left: 15px;
+  
+
+}
+
+
+.stock_img{
+   width: 320px;
+   height: 180px;
+   padding: 5px 5px 5px 0;
+   
+}
+
+.stock{
+   width: 350px;
+   padding_top: 500px;
+
+}
+
+.stock_txt{
+   width: 320px;
+
+}
