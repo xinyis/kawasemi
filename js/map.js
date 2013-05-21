@@ -4,7 +4,9 @@
 
 (function () {
     "use strict";
-    function initialize() {
+
+    var map = {};
+    map.initialize = function () {
         var myLatlng = new google.maps.LatLng(-34.397, 150.644);
         var mapOptions = {
             zoom: 8,
@@ -13,18 +15,16 @@
         };
 
         document.body.onload = function () {
-            var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            map.app = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
             var marker = new google.maps.Marker({
                 position: myLatlng,
-                map: map,
+                map: map.app,
                 title:"Hello World!"
             });
+            $(window).trigger('mapinitialized', this);
         };
-    }
-
-    window.map = {
-        initialize: initialize
     };
 
-    
+    window.map = map;
 })();

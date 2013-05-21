@@ -5,7 +5,8 @@
 (function () {
     "use strict";
 
-    $(function() {
+    $(function () {
+        // Carousel
         var carousel = (function () {
             var list = $('.carousel > ul');
             var active = $('.carousel > ul > li:first');
@@ -13,6 +14,7 @@
             var next = active.next();
 
             return {
+                active: function() { return active; },
                 resize: function() {
                     var width = 0;
                     _.each($('.carousel > ul > li'), function(e) {
@@ -28,6 +30,7 @@
                         width:         width + "px",
                         'margin-left': shift + 'px'
                     });
+                    $(window).trigger('carouselupdate', active);
                 },
                 right: function () {
                     if (next.length === 0) { return 0; }
@@ -52,15 +55,13 @@
                     return shift;
                 },
                 shift: function (shift) {
-                    if (shift < 0) {
-                        list.animate({
-                            'margin-left': '-='+(-shift)+'px'
-                        }, 200);
-                    } else {
-                        list.animate({
-                            'margin-left': '+='+shift+'px'
-                        }, 200);
-                    }                            
+                    var margin = (shift < 0) ? '-='+(-shift)+'px' : '+='+shift+'px';
+
+                    list.animate({
+                        'margin-left': margin
+                    }, 200, function () {
+                        $(window).trigger('carouselupdate', active);
+                    });
                 }
             };
         })();
@@ -84,9 +85,45 @@
             if (shift !== 0) { carousel.shift(shift); }
         });
 
+        $(window).on('click', function(e) {
+            target.trigger('swipeleft');
+        });
+
         // disable scroll
         target.on('touchmove', function(e) {
             e.preventDefault();
         });
+
+        // Map
+        (function() {
+            var overlay;
+
+            $(window).on('carouselupdate', function(e, article) {
+                var latlngs = _.map($(article).data('latlng'), function(latlng) {
+                    var lat = latlng[0];
+                    var lng = latlng[1];
+                    
+                    return new google.maps.LatLng(lat, lng);
+                });
+
+                var path = new google.maps.Polyline({
+                    path: latlngs,
+                    strokeColor: "#FF0000",
+                    strokeOpacity: 1.0,
+                    strokeWeight: 2
+                });
+
+                // Clear path
+                if (overlay) { overlay.setMap(null); }
+                
+                var map = window.map.app;
+                path.setMap(map);
+                overlay = path;
+            });
+
+            $(window).on('mapinitialized', function(e, map) {
+                $(window).trigger('carouselupdate', $('.carousel > ul > li:first'));
+            });
+        })();
     });
 })();
