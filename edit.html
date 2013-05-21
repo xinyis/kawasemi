@@ -16,8 +16,11 @@
   <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
   <!-- Extra Codiqa features -->
+
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   <script src="js/underscore-min.js"></script>
    <script src="edit.js"></script>
+ <script src="js/article.js"></script>
 
  
 </head>
@@ -42,26 +45,25 @@
 
         <!-- MAP -->
       <div class="article_map">
-      <iframe class="map" src="https://maps.google.co.jp/maps/ms?ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=203214540878236780494.0004431d8048888850d25&amp;ll=34.985586,135.757829&amp;spn=0.169955,0.224935&amp;t=m&amp;brcurrent=3,0x6001a8d6cd3cc3f1:0xc0961d366bbb1d3d,1&amp;output=embed">
-      </iframe>
+      <div id="map_canvas"></div>
       </div>
 
         <!-- POST -->
-        <div class="article_main"> 
+        <div class="article_main"  data-route="[[35.675391,139.694552],[35.674136,139.692836],[35.675322,139.695196],[35.671138,139.695754],[35.668248,139.697618],[35.666889,139.697726],[35.664564,139.699049]]"> 
            
           <div id="list-view">
 
-            <div class="article_spot">
-              <img alt="img" src="article_img/pony.jpg" ></img>
+            <div class="article_spot"  data-spot="[[35.675391,139.694552]">
+              <img alt="img" src="article_img/pony.jpg"></img>
               <p><textarea name="description" rows="4" cols="20">代々木ポニー牧場。ポニーが可愛かった！</textarea></p>
             </div>
 
-            <div class="article_spot">
-              <img alt="img" src="article_img/sunset.png" ></img>
+            <div class="article_spot" data-spot="[35.671138,139.695754]">
+              <img alt="img" src="article_img/sunset.png"  ></img>
               <p><textarea name="description" rows="4" cols="20">代々木公園にて。今日は綺麗な夕焼けが見えた。</textarea></p>
             </div>
 
-            <div class="article_spot">
+            <div class="article_spot" data-spot="[35.664564,139.699049]">
               <img alt="img" src="article_img/basashi.jpg" ></img>
               <p><textarea name="description" rows="4" cols="20">夜ご飯は馬刺し。</textarea></p>
             </div>
@@ -73,5 +75,9 @@
           </div>
         </div>
 </div>
+ <!-- javascript -->
+  <script src="js/map.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
+
 </body>
 </html>

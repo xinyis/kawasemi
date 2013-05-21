@@ -12,6 +12,9 @@ iframe.map {
   marginwidth: 0; 
 }
 
+#map_canvas{
+   height: 170px;
+}
 
 .menu{
   position: fixed;
@@ -45,7 +48,7 @@ input.title{
 
 .article_main{
   position: absolute;
-  top: 260px; 
+  top: 280px; 
   width: 100%;
   height:300px;
   text-align: center;
