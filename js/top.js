@@ -85,10 +85,6 @@
             if (shift !== 0) { carousel.shift(shift); }
         });
 
-        $(window).on('click', function(e) {
-            target.trigger('swipeleft');
-        });
-
         // disable scroll
         target.on('touchmove', function(e) {
             e.preventDefault();
