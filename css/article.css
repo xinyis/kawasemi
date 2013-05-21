@@ -34,27 +34,15 @@ iframe.map {
   overflow: scroll;
 }
 
-div img {
-     vertical-align:middle;
-     width: 250px;
-     height: 150px;
-}
-
 #list-view {
-	overflow-x: hidden;
-	overflow-y: auto;
+        -webkit-overflow-scrolling:touch;
+	overflow: auto;
 	border: none;
-	height: 200px;
-	width: 300px;
+	height: 210px;
+	width: 100%;
 }
 
-#list-table {
-  width: 100%;
-}
-#list-table tbody {
-   width: 100%;
-}
-
-#list-table td {
-   border: none;
+#list-view .article_spot img {
+    display: block;
+    width: 100%;
 }

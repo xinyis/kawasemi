@@ -12,7 +12,7 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-         document.body.onload = function () {
+        document.body.onload = function () {
             var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             var marker = new google.maps.Marker({
                 position: myLatlng,
