@@ -18,7 +18,7 @@
                 resize: function() {
                     var width = 0;
                     _.each($('.carousel > ul > li'), function(e) {
-                        var w = $(e).children('img').width();
+                        var w = $(e).find('img').width();
                         $(e).width(w + 30);
                         $(e).children('.title').width(w - 10);
                         width += $(e).outerWidth(true);
@@ -72,7 +72,7 @@
         var target = $('.carousel');
 
         carousel.resize();
-        $('.carousel > ul > li > img').on('load', function() {
+        $('.carousel > ul > li img').on('load', function() {
             carousel.resize();
         });
 
