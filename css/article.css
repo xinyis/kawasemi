@@ -41,9 +41,9 @@ iframe.map {
         -webkit-overflow-scrolling:touch;
 	overflow: auto;
 	border: none;
-	height: 210px;
-	width: 80%;
-        padding-left:10%;
+	height: 300px;
+	width: 95%;
+        margin: auto;
 }
 
 #list-view .article_spot{
