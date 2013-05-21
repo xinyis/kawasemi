@@ -27,12 +27,18 @@
 }
 .carousel ul li .title {
     margin: 0 15px;
-    text-align: center;
+    padding: 3px 0 0 10px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 0 0 #000;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
+    height: 100px;
     z-index: 1000;
     background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.5);
+    background: -webkit-gradient(linear,left bottom, left top,
+      from(rgba(0,0,0,0.0)),
+      to(rgba(0,0,0,0.3)));
 }
 
