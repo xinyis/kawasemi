@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  <link rel="stylesheet" href="css/top.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  <script src="js/top.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="page1">
+
+    <!-- Header -->
+    <div data-theme="a" data-role="header">
+       <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true">投稿</a>
+       <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+            <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
+            <li><a href="edit.html" data-ajax="false">まとめて投稿</a></li>
+        </ul>
+       </div>
+<!--
+      <a data-rel="popup" data-role="button"  data-inline="true" data-ajax="false" href="#popupMenu" class="ui-btn-left" data-icon="edit"> data-icon="edit"投稿</a>
+      <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+            <li data-role="divider" data-theme="a">Popup API</li>
+            <li><a href="stock.html">スポットメモ</a></li>
+            <li><a href="edit.html">めとめて投稿</a></li>
+        </ul>
+        </div>
+-->
+      <a data-role="button" data-ajax="false" href="home.html" class="ui-btn-right" data-icon="home">ホーム</a>
+      <h3>GAYA</h3>
+    </div>
+
+    <!-- Map -->
+    <div id="map_canvas"></div>
+    <!-- Articles -->
+    <div class="carousel">
+      <ul>
+        <li data-latlng="[[-34.397, 150.054],[-34.197, 150.844],[-34.097, 150.044],[-34.397, 160.644]]">
+          <h3 class="title">渋谷でお買い物</h3>
+          <a data-ajax="false" href="article.html"><img src="article_img/hikarie.jpg" /></a>
+        </li>
+        <li data-latlng="[[-34.397, 150.644],[-34.197, 150.844],[-34.097, 150.044],[-34.397, 160.644]]">
+          <h3 class="title">渋谷カフェ巡り</h3>
+          <a data-ajax="false" href="article.html"><img alt="img" src="article_img/cafe1.jpg" ></img></a>
+        </li>
+        <li data-latlng="[[-34.397, 150.044],[-34.197, 150.844],[-34.097, 150.044],[-34.397, 160.644]]">
+          <h3 class="title">渋谷デートスポットぼっち紀行</h3>
+          <a data-ajax="false" href="article.html"><img src="article_img/planetarium.jpg" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- javascript -->
+  <script src="js/map.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
+</body>
+</html>
