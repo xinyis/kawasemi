@@ -26,8 +26,8 @@
 <!-- Home -->
 <div data-role="page" id="page1">
   <div data-theme="a" data-role="header">
-    <a data-role="button" href="index.html" class="ui-btn-left" data-icon="back" data-iconpos="notext"></a>
-    <a data-role="button" href="user.html" class="ui-btn-right" data-icon="home" data-iconpos="notext"></a>
+    <a data-role="button" data-ajax="false" href="index.html" class="ui-btn-left" data-icon="back" data-iconpos="notext"></a>
+    <a data-role="button" data-ajax="false" href="user.html" class="ui-btn-right" data-icon="home" data-iconpos="notext"></a>
     <h3>
       GAYA
     </h3>
@@ -37,8 +37,8 @@
       <textarea id="comment_textarea" name="comment"></textarea>
       <div class="ui-grid-a">
 	<div class="ui-block-a tool_div" data-role="controlgroup" data-type="horizontal">
-	  <a type="button" data-role="button" href="checkin.html" data-inline="true" data-mini="true">写</a>
-	  <a type="button" href="checkin.html" data-role="button" href="checkin.html" data-inline="true" data-mini="true">チ</a>
+	  <a type="button" data-role="button" data-ajax="false" href="checkin.html" data-inline="true" data-mini="true">写</a>
+	  <a type="button" data-ajax="false" href="checkin.html" data-role="button" data-inline="true" data-mini="true">チ</a>
 	</div>
 	<div class="ui-block-b stock_button_div">
 	  <input type="submit" value="保存" data-theme="b" data-mini="true" data-inline="true">
@@ -46,10 +46,10 @@
       </div>
       <div class="camera_button_div">
 	<div>
-	  <a data-role="button" href="" class="ui-btn-center">写真を撮る</a>
+	  <a data-role="button" data-ajax="false" href="" class="ui-btn-center">写真を撮る</a>
 	</div>
 	<div>
-	  <a data-role="button" href="" class="ui-btn-center">ライブラリから選択</a>
+	  <a data-role="button" data-ajax="false" href="" class="ui-btn-center">ライブラリから選択</a>
 	</div>
       </div>
     </form>
