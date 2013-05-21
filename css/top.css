@@ -30,7 +30,7 @@
     padding: 3px 0 0 10px;
     text-align: left;
     color: #ffffff;
-    text-shadow: 0 0 0 #000;
+    text-shadow: none;
     position: absolute;
     left: 0;
     top: 0;
