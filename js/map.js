@@ -1,6 +1,6 @@
 /*jshint strict:true */
 /*jshint browser:true, jquery:true */
-/*global google:false */
+/*global google:false, _:false */
 
 (function () {
     "use strict";
@@ -26,6 +26,25 @@
             });
             $(window).trigger('mapinitialized', this);
         };
+    };
+
+    map.render_route = function(route) {
+        var latlngs = _.map(route, function(latlng) {
+            var lat = latlng[0];
+            var lng = latlng[1];
+
+            return new google.maps.LatLng(lat, lng);
+        });
+
+        var path = new google.maps.Polyline({
+            path: latlngs,
+            strokeColor: "#FF0000",
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+        path.setMap(map.app);
+
+        return path;
     };
 
     window.map = map;

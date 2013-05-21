@@ -17,7 +17,9 @@
 
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
-   
+  <script src="js/underscore-min.js"></script>
+
+  <script src="js/article.js"></script>
 </head>
 <body>
 <!-- Home -->
@@ -35,12 +37,11 @@
 
         <!-- MAP -->
       <div class="article_map">
-      <iframe class="map" src="https://maps.google.co.jp/maps/ms?ie=UTF8&amp;brcurrent=3,0x601be3729342ee21:0x7304e8e48f9f6eaa,0&amp;oe=UTF8&amp;msa=0&amp;msid=208156879700673961036.00049beaafc6b2ff9f7d6&amp;t=m&amp;ll=35.424779,138.752056&amp;spn=0.353414,0.330513&amp;output=embed">
-      </iframe>
+    <div id="map_canvas"></div>
       </div>
 
         <!-- POST -->
-        <div class="article_main"> 
+        <div class="article_main" data-route="[[35.658534,139.702127],[35.658255,139.704359],[35.65768,139.704316],[35.657383,139.704616],[35.657453,139.705882],[35.657139,139.706869],[35.656808,139.707513],[35.655221,139.706676],[35.654088,139.707856]]"> 
            
           <div id="list-view">
             <div class="article_spot" data-spot="[35.655622,139.69996]">
@@ -78,5 +79,9 @@
           </div>
         </div>
 </div>
+
+  <!-- javascript -->
+  <script src="js/map.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkcTDE3pW5PrJn4KOdOxkkGtU2k-Q-7UE&sensor=true&callback=map.initialize"></script>
 </body>
 </html>
