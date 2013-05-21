@@ -7,12 +7,28 @@
 (function() {
     "use strict";
     
+    var is_second = $.cookie("second_visit_flag");
+    if (is_second) {
+	$.cookie("second_visit_flag", "0", {
+		expires: 5
+	    });
+	$(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
+    } else {
+	$.cookie("second_visit_flag", "1", {
+		expires: 5
+	    });
+    }
     $(document).ready( function() {
         $("#comment_textarea").focus();
 
         $("#picture-button").on('click', function () {
             alert('写真をとりました');
-            $(".memo-stock").append('<li><img src="img/daruma.jpg" /></li>');
+	    if (is_second){
+		$(".memo-stock").append('<li><img src="article_img/sunset.jpg" /></li>');
+	    } else {
+		$(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
+		
+	    }
         });
 
         $("#stock_form").submit( function () {
