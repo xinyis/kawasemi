@@ -96,29 +96,42 @@
 
         // Map
         (function() {
-            var overlay;
+            var overlays = [];
 
             $(window).on('carouselupdate', function(e, article) {
-                var latlngs = _.map($(article).data('latlng'), function(latlng) {
+
+                // Clear overlays
+                _.each(overlays, function (o) { o.setMap(null); });
+                overlays = [];
+
+                var map = window.map.app;
+
+                _.each($(article).data('spots'), function(latlng) {
+                    var lat = latlng[0];
+                    var lng = latlng[1];
+                    
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(lat, lng),
+                        map: map
+                    });
+
+                    overlays.push(marker);
+                });
+
+                var route = _.map($(article).data('route'), function(latlng) {
                     var lat = latlng[0];
                     var lng = latlng[1];
                     
                     return new google.maps.LatLng(lat, lng);
                 });
-
                 var path = new google.maps.Polyline({
-                    path: latlngs,
+                    path: route,
                     strokeColor: "#FF0000",
                     strokeOpacity: 1.0,
                     strokeWeight: 2
                 });
-
-                // Clear path
-                if (overlay) { overlay.setMap(null); }
-                
-                var map = window.map.app;
                 path.setMap(map);
-                overlay = path;
+                overlays.push(path);
             });
 
             $(window).on('mapinitialized', function(e, map) {
