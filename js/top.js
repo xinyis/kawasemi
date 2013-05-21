@@ -20,7 +20,7 @@
                     _.each($('.carousel > ul > li'), function(e) {
                         var w = $(e).children('img').width();
                         $(e).width(w + 30);
-                        $(e).children('.title').width(w);
+                        $(e).children('.title').width(w - 10);
                         width += $(e).outerWidth(true);
                     }, 0);
 
