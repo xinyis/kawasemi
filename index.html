@@ -27,15 +27,29 @@
 
     <!-- Header -->
     <div data-theme="a" data-role="header">
-      <a data-role="button" data-ajax="false" href="stock.html"
-    class="ui-btn-left" data-icon="edit">メモ</a>
+       <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true">投稿</a>
+       <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+            <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
+            <li><a href="edit.html" data-ajax="false">まとめて投稿</a></li>
+        </ul>
+       </div>
+<!--
+      <a data-rel="popup" data-role="button"  data-inline="true" data-ajax="false" href="#popupMenu" class="ui-btn-left" data-icon="edit"> data-icon="edit"投稿</a>
+      <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+            <li data-role="divider" data-theme="a">Popup API</li>
+            <li><a href="stock.html">スポットメモ</a></li>
+            <li><a href="edit.html">めとめて投稿</a></li>
+        </ul>
+        </div>
+-->
       <a data-role="button" data-ajax="false" href="home.html" class="ui-btn-right" data-icon="home">ホーム</a>
       <h3>GAYA</h3>
     </div>
 
     <!-- Map -->
     <div id="map_canvas"></div>
-
     <!-- Articles -->
     <div class="carousel">
       <ul>
