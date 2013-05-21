@@ -7,7 +7,18 @@
 
     var map = {};
     map.initialize = function () {
-        var myLatlng = new google.maps.LatLng(35.657941,139.708586);
+        var lat; var lng;
+        
+        var center = $("#map_canvas").data('center');
+        if (center) {
+            lat = center[0];
+            lng = center[1];
+        } else {
+            lat = 35.657941;
+            lng =139.708586;
+        }
+
+        var myLatlng = new google.maps.LatLng(lat,lng);
         var mapOptions = {
             zoom: 14,
             center: myLatlng,
@@ -18,12 +29,15 @@
         document.body.onload = function () {
             map.app = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map.app,
-                icon: image,
-                title:"Hello World!"
-            });
+            if (!center) {
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map.app,
+                    icon: image,
+                    title:"Hello World!"
+                });
+            }
+
             $(window).trigger('mapinitialized', this);
         };
     };
