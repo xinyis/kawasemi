@@ -5,7 +5,7 @@
 }
 
 #map_canvas{
-   height: 170px;
+   height: 140px;
 }
 
 .menu{
@@ -32,17 +32,17 @@ input.title{
 
 .article_map{
   position: fixed;
-  top: 100px;
+  top: 50px;
   left:0px;
   width: 100%;
-  height: 150px;
+  height: 140px;
 }
 
 .article_main{
   position: absolute;
-  top: 280px; 
+  top: 195px; 
   width: 100%;
-  height:230px;
+  height:300px;
   text-align: center;
   overflow: scroll;
 }
