@@ -21,7 +21,7 @@
         $("#picture-button").on('click', function () {
             alert('写真をとりました');
 	    if (is_second){
-		$(".memo-stock").append('<li><img src="article_img/sunset.jpg" /></li>');
+		$(".memo-stock").append('<li><img src="article_img/sunset.png" /></li>');
 	    } else {
 		$(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
 		
