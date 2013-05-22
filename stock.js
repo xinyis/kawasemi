@@ -10,7 +10,7 @@
     $(document).ready( function() {
         $("#comment_textarea").focus();
 
-	var is_second = $.cookie("second_visit_flag");
+	var is_second = $.cookie("second_visit_flag") == "1";
 	if (is_second) {
 	    $.cookie("second_visit_flag", "0", {expires:5});
 	    $(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
