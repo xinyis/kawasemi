@@ -6,8 +6,14 @@
     "use strict";
 
     $(function() {
+	//現在表示中のスポット番号
+	var current = -1;
+
         var route;
         var spots = [];
+	var latlngs = [];
+	var spotElms = [];
+	var spotTops = [];
         $(window).on('mapinitialized', function () {
             var map = window.map;
 
@@ -19,6 +25,9 @@
                 var lng = p[1];
 
                 var latlng = new google.maps.LatLng(lat, lng);
+		spotElms.push(e);
+		spotTops.push($(e).offset().top);
+		latlngs.push(latlng);
                 spots.push(new google.maps.Marker({
                     position: latlng,
                     map: map.app,
@@ -31,20 +40,36 @@
                     }
                 }));
             });
+
+	    //スクロールイベント
+	    $(".article_main").scroll(function () {
+		    for (var i = spotTops.length-1; i>=0; i--) {
+			if ($(".article_main").scrollTop() > spotTops[i] - 270) {
+			    if (i != current){
+				current = i;
+				setPin(spotElms[i]);
+			    }
+			    break;
+			}
+		    }
+		});
+	    setPin(spotElms[0]);
         });
 
-        var overlay = null;
-        $(".article_spot").on('click', function () {
+	//$(".article_spot").on('click', setPin(this));
+	
+	var overlay = null;
+	function setPin(e) {
             var map = window.map;
 
             if (overlay) { overlay.setMap(null); overlay = null; }
 
-            var pos = $(this).data('spot');
+            var pos = $(e).data('spot');
             var latlng = new google.maps.LatLng(pos[0], pos[1]);
             overlay = new google.maps.Marker({
                 position: latlng,
                 map: map.app
             });
-        });
+        }
     });
 })();

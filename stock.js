@@ -7,19 +7,16 @@
 (function() {
     "use strict";
     
-    var is_second = $.cookie("second_visit_flag");
-    if (is_second) {
-	$.cookie("second_visit_flag", "0", {
-		expires: 5
-	    });
-	$(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
-    } else {
-	$.cookie("second_visit_flag", "1", {
-		expires: 5
-	    });
-    }
     $(document).ready( function() {
         $("#comment_textarea").focus();
+
+	var is_second = $.cookie("second_visit_flag");
+	if (is_second) {
+	    $.cookie("second_visit_flag", "0", {expires:5});
+	    $(".memo-stock").append('<li><img src="article_img/pony.jpg" /></li>');
+	} else {
+	    $.cookie("second_visit_flag", "1", {expires:5});
+	}
 
         $("#picture-button").on('click', function () {
             alert('写真をとりました');

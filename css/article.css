@@ -1,6 +1,7 @@
 /* Put your custom CSS here */
 #page1{
    min-height: 1000px;
+   text-align: center;
 }
 
 .menu{
@@ -24,23 +25,20 @@
 .article_main{
   position: absolute;
   top: 220px; 
-  width: 100%;
   height:300px;
+  width: 100%;
   text-align: center;
   overflow: scroll;
 }
 
 #list-view {
         -webkit-overflow-scrolling:touch;
-	overflow: auto;
 	border: none;
-	height: 300px;
-	width: 95%;
-        margin: auto;
 }
 
 #list-view .article_spot{
         border: 1px dashed #000;
+	margin: 5px;
         padding: 5px 5px 5px 5px;
 }
 
