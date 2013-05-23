@@ -1,5 +1,25 @@
+#page1{
+
+}
+
+#header {
+    background: #ffffff;
+    border: none;
+    margin: 0;
+}
+
+#logo {
+    width: 100%;
+}
+
 #map_canvas {
-    height: 250px;
+    height: 200px;
+}
+
+#map_article_line {
+    position: relative;
+    top: -8px;
+    width: 100%;
 }
 
 .carousel {
