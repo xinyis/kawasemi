@@ -1,0 +1,19 @@
+#user_pic{
+  float: left;
+  width: 30%;
+}
+
+#user_txt{
+  float: right;
+  width: 60%;
+   
+}
+
+#batch{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#map-canvas{
+  padding-top: 5px;
+}
