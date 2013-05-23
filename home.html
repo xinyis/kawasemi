@@ -11,7 +11,7 @@
   <!-- Extra Codiqa features -->
   <link rel="stylesheet" href="codiqa.ext.css">
   <link rel="stylesheet" href="css/top.css">
-  
+   <link rel="stylesheet" href="css/home.css">
   <!-- jQuery and jQuery Mobile -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
   <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
@@ -24,32 +24,38 @@
 
 <body>
   <div data-role="page" id="page1">
-
-    <!-- Header -->
-    <div data-theme="a" data-role="header">
-       <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true">作成</a>
-       <div data-role="popup" id="popupMenu" data-theme="a">
-        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="a">
-            <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
-            <li><a href="edit.html" data-ajax="false">メモをまとめて投稿</a></li>
-        </ul>
-       </div>
-<!--
-      <a data-rel="popup" data-role="button"  data-inline="true" data-ajax="false" href="#popupMenu" class="ui-btn-left" data-icon="edit"> data-icon="edit"投稿</a>
-      <div data-role="popup" id="popupMenu" data-theme="a">
-        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
-            <li data-role="divider" data-theme="a">Popup API</li>
-            <li><a href="stock.html">スポットメモ</a></li>
-            <li><a href="edit.html">めとめて投稿</a></li>
-        </ul>
-        </div>
--->
-      <a data-role="button" data-ajax="false" href="index.html" class="ui-btn-right">TOP</a>
-      <h3>HALのホーム</h3>
+   <div class="menu">    
+   <!-- Header -->
+    <div data-role="header" id="header">
+      <img src="img/logo.png" id="logo">
     </div>
+   </div>
 
+   <div clss="article-main">
+    <div id="user-info">
+       <div id="user-pic">
+       <img src="img/user-pic.jpg"></img>
+       </div>
+       <div id="self-intro">
+       <p>街歩き大好きです</p>
+       </div>
+       
+       <div id="batch">
+       <div data-role="navbar" data-iconpos="top" data-theme="c">
+		<ul>
+			<li><a id="nav-top" href="#" data-icon="plus" data-theme="c">10KM</a></li>
+			<li><a href="#" data-icon="forward" data-theme="c">100routes</a></li>
+			<li><a href="stock.html" data-icon="grid" data-theme="c">1000Spots</a></li>
+		    <li><a href="#" data-icon="star" data-theme="c">60Hearts</a></li>
+			<li><a href="home.html" data-icon="info" data-theme="c">80Comments</a></li>
+		</ul>
+	  </div><!-- /navbar -->
+      </div>
+    </div><!--userinfo-->
+    
     <!-- Map -->
     <div id="map_canvas"></div>
+    
     <!-- Articles -->
     <div class="carousel">
       <ul>
@@ -58,7 +64,7 @@
           <a data-ajax="false" href="article.html">
             <h3 class="title">代々木ポニー牧場に行ってきた</h3>
 	    <img src="article_img/pony_square.jpg" />
-	  </a>
+	   </a>
         </li>
         <li data-spots="[[35.658412,139.683352],[35.657017,139.708147],[35.655483,139.706087]]"
 	    data-route="[[35.658412,139.683352],[35.658552,139.684887],[35.656948,139.689779],[35.658133,139.701624],[35.658273,139.708576],[35.657017,139.708147],[35.655483,139.706087]]">
@@ -69,6 +75,20 @@
         </li>
       </ul>
     </div>
+  </div>  
+    <div data-role="footer" data-position="fixed" data-theme="c">		
+	<div data-role="navbar" data-iconpos="top" data-theme="c">
+		<ul>
+			<li><a id="nav-top" href="#" data-icon="custom" data-theme="c">現在地</a></li>
+			<li><a href="#" data-icon="star" data-theme="c">見つける</a></li>
+			<li><a href="stock.html" data-icon="star" data-theme="c">投稿</a></li>
+				<li><a href="#" data-icon="star" data-theme="c">気に入る</a></li>
+			<li><a href="home.html" data-icon="star" data-theme="c">自分</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+
+
   </div>
 
 
