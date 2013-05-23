@@ -42,20 +42,20 @@
 }
 
 #map_canvas {
-    height: 170px;
+    height: 137px;
 }
 .article_map{
   position: relative;
   top: -4px;
   left:0px;
   width: 100%;
-  height: 150px;
+  height: 120px;
 }
 
 #map_article_line{
   width: 100%;
   position: relative;
-  margin: 0 0 -7px 0;
+  margin: 0px 0 -7px 0;
   z-index: 1000;
 }
 
