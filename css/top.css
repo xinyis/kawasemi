@@ -66,11 +66,15 @@
       to(rgba(0,0,0,0.3)));
 }
 
-footer.ui_bar{
-    height: 20px;    
+
+#footer{
+   width: 20%;
+}
+#navbar{
+   width: 20%;
 }
 
-#search {
-    background: url('img/map-marker.png') 50% 50% no-repeat;
+navbar-top.span.ui-bt-inner.nav-top.ui-icon.ui-icon-custom.ui-icon-shadow {
+    background-image: url('img/map-marker.png') 50% 50% no-repeat;
     background-size: 16px 26px;
 }
