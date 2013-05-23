@@ -24,21 +24,16 @@
 
 <body>
   <div data-role="page" id="page1">
-   <div class="menu">    
    <!-- Header -->
-    <div data-role="header" id="header">
+    <div data-role="header" id="header"  data-position="fixed" >
       <img src="img/logo.png" id="logo">
     </div>
-   </div>
 
-   <div clss="article-main">
+   <div data-role="content">
     <div id="user-info">
-       <div id="user-pic">
        <img src="img/user-pic.jpg"></img>
-       </div>
-       <div id="self-intro">
        <p>街歩き大好きです</p>
-       </div>
+       
        
        <div id="batch">
        <div data-role="navbar" data-iconpos="top" data-theme="c">
@@ -50,13 +45,13 @@
 			<li><a href="home.html" data-icon="info" data-theme="c">80Comments</a></li>
 		</ul>
 	  </div><!-- /navbar -->
-      </div>
+      </div><!--batch-->
     </div><!--userinfo-->
     
     <!-- Map -->
     <div id="map_canvas"></div>
     
-    <!-- Articles -->
+    <!-- Articles List -->
     <div class="carousel">
       <ul>
         <li data-spots="[[35.675391,139.694552],[35.671138,139.695754],[35.664564,139.699049]]"
@@ -71,11 +66,13 @@
           <a data-ajax="false" href="article.html">
             <h3 class="title">三色中華を食べた</h3>
 	    <img src="article_img/china.jpg" />
-	  </a>
+	   </a>
         </li>
       </ul>
-    </div>
-  </div>  
+    </div><!-- Articles List -->
+    
+  </div><!--content-->  
+    
     <div data-role="footer" data-position="fixed" data-theme="c">		
 	<div data-role="navbar" data-iconpos="top" data-theme="c">
 		<ul>
