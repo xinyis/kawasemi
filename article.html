@@ -26,20 +26,21 @@
 <div data-role="page" id="page1">
 
     <div class="menu"> 
-        <div data-theme="a" data-role="header">
-            <a data-role="button" data-ajax="false" href="index.html"
-        class="ui-btn-left" data-icon="back">戻る</a>
-           <a data-role="button" data-ajax="false" href="home.html" class="ui-btn-right" data-icon="home">HALのホーム</a>
+        <div data-theme="a" data-role="header" id="header">
+	  <img src="img/logoframe.jpg">
+            <a data-ajax="false" href="index.html"><img src="img/back.png"></a>
             <h3>
                至高のおしゃれカフェ＠渋谷を探してきた
             </h3>
         </div>
-    <div>
+    </div>
 
-        <!-- MAP -->
-      <div class="article_map">
-    <div id="map_canvas"></div>
-      </div>
+    <!-- MAP -->
+    <div class="article_map">
+      <div id="map_canvas"></div>
+    </div>
+
+    <img src="img/line.png" id="map_article_line">
 
         <!-- POST -->
         <div class="article_main" data-route="[[35.658534,139.702127],[35.658255,139.704359],[35.65768,139.704316],[35.657383,139.704616],[35.657453,139.705882],[35.657139,139.706869],[35.656808,139.707513],[35.655221,139.706676],[35.654088,139.707856]]" id="list-view">
