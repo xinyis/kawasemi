@@ -85,9 +85,16 @@
 		<ul>
 			<li><a href="index.html" data-icon="plus" data-ajax="false" data-theme="c">現在地</a></li>
 			<li><a href="#" data-icon="star" data-theme="c">見つける</a></li>
-			<li><a href="stock.html" data-icon="star" data-ajax="false" data-theme="c">投稿</a></li>
-				<li><a href="#" data-icon="star" data-ajax="false" data-theme="c">気に入る</a></li>
-			<li><a href="home.html" data-icon="star" data-ajax="false" data-theme="c" class="ui-btn-active ui-state-persist">自分</a></li>
+		        <li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-icon="bars" data-theme="c" data-transition="pop" data-position-to="window">作成</a>
+                        <div data-role="popup" id="popupMenu" data-theme="c" class="ui-corner-all">
+                          <div style="padding: 5px 5px">
+                            <input type="button" id="pop1" href="#" data-theme="c" value="メモ保存" onClick="location.href='stock.html'"></input>
+　　　　　　　　　　　      <input type="button" id="pop2" href="#" data-theme="c" value="記事書く" onClick="location.href='edit.html'"></input>
+                          </div>
+		        </div>
+                        </li>
+		        <li><a href="#" data-icon="star" data-theme="c">気に入る</a></li>
+			<li><a href="home.html" data-icon="star" data-theme="c" class="ui-btn-active ui-state-persist">自分</a></li>
 		</ul>
 	</div><!-- /navbar -->
 </div><!-- /footer -->

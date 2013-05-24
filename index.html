@@ -27,13 +27,13 @@
       
       <!-- Header -->
       <div data-role="header" id="header" >
-	<!--       <a href="#popupMenu" data-rel="popup" data-role="button"
-		   data-inline="true">作成</a>
+        <!--
+	<a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true">作成</a>
 		   <div data-role="popup" id="popupMenu" data-theme="a">
-        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="a">
-          <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
-          <li><a href="edit.html" data-ajax="false">メモをまとめて投稿</a></li>
-        </ul>
+                   <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="a">
+                      <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
+                      <li><a href="edit.html" data-ajax="false">メモをまとめて投稿</a></li>
+                   </ul>
 		   </div>-->
 	<img src="img/logo.png" id="logo">
       </div>
@@ -74,16 +74,15 @@
 	<div data-role="navbar" data-iconpos="top" data-theme="c">
 	  <ul>
 	    <li><a id="nav-top" href="index.html" data-icon="custom" data-theme="c" class="ui-btn-active ui-state-persist">現在地</a></li>
-	    <li><a href="#" data-icon="star" data-theme="c" data-ajax="false">見つける</a></li>
-	    <li><a href="stock.html" data-icon="star" data-theme="c" data-ajax="false">作成</a>
-	      <!--UNDONE!!!!
-                  <div data-role="popup" id="popupMenu" data-theme="a">
-                    <ul data-role="listview" data-inset="true" style="min-width:100px; height:30px;" data-theme="a">
-                      <li><a href="stock.html" data-ajax="false">スポットメモ</a></li>
-                      <li><a href="edit.html" data-ajax="false">メモをまとめて投稿</a></li>
-                    </ul>
-                  </div>
-		  -->
+	    <li><a href="#"data-theme="c">見つける</a></li>
+	    <li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-icon="bars" data-theme="c" data-transition="pop" data-position-to="window">作成</a>
+                   <div data-role="popup" id="popupMenu" data-theme="c" class="ui-corner-all">
+                       <div style="padding: 5px 5px">
+                       <input type="button" id="pop1" href="#" data-theme="c" value="メモ保存" onClick="location.href='stock.html'"></input>
+　　　　　　　　　　　 <input type="button" id="pop2" href="#" data-theme="c" value="記事書く" onClick="location.href='edit.html'"></input>
+                       </div>
+		  
+                   </div>
             </li>
 	    <li><a href="#" data-icon="star" data-theme="c" data-ajax="false">気に入る</a></li>
 	    <li><a href="home.html" data-icon="star" data-theme="c" data-ajax="false">自分</a></li>
