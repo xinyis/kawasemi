@@ -26,11 +26,16 @@
 <body>
 <!-- Home -->
 <div data-role="page" id="page1">
-  <div data-role="header" id="header">
-    <img src="img/logo.png">
-  </div>
+   <div data-role="header" id="header">
+    <img src="img/logoframe.jpg">
+    <a data-ajax="false" href="index.html"><img src="img/back.png"></a>
+    <h3>
+      メモ保存
+    </h3>
+   </div>
+
   <div data-role="content">
-    <form id="stock_form" name="stock_form" action="index.html" data-ajax="false">
+    <form id="stock_form" name="stock_form" acton="index.html" data-ajax="false">
       <textarea id="comment_textarea" name="comment" placeholder="メモを残しましょう"></textarea>
       <ul class="memo-stock">
       </ul>
@@ -56,7 +61,7 @@
 		<ul>
 			<li><a id="nav-top" href="index.html" data-ajax="false" data-icon="custom" data-theme="c">現在地</a></li>
 			<li><a href="#" data-icon="search" data-ajax="false" data-theme="c">見つける</a></li>
-			<li><a href="stock.html" data-icon="star" data-ajax="false" data-theme="c"  class="ui-btn-active ui-state-persist">作成</a></li>
+			<li><a href="stock.html" data-icon="bars" data-ajax="false" data-theme="c"  class="ui-btn-active ui-state-persist">作成</a></li>
 			<li><a href="#" data-icon="star" data-ajax="false" data-theme="c">気に入る</a></li>
 			<li><a href="home.html" data-icon="home" data-ajax="false" data-theme="c">自分</a></li>
 		</ul>

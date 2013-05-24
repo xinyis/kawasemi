@@ -8,11 +8,29 @@
   height: 60px;
 }
 
-#header img{
-  width: 100%;
-  background-color: #ffffff;
+#header a{
+  width: 75px;
+  left: -1px;
+  background: none;
+  border: none;
 }
 
+#header img{
+  width: 100%;
+}
+
+#header h3{
+  position: absolute;
+  color: #0088ff;
+  top: 6px;
+  text-shadow: none;
+  left: 45px;
+  font-size: 15px;
+}
+
+#header a{
+  position: absolute;
+}
 #comment_textarea {
   height: 130px;
 }
@@ -43,4 +61,8 @@
     margin: 0;
     text-align: center;
     backgroundColor: transparent
+}
+
+div.ui-content{
+ top: -4px;
 }

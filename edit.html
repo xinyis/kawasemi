@@ -28,15 +28,16 @@
 <!-- Home -->
 <div data-role="page" id="page1">
 
-    <div class="menu"> 
-        <div data-theme="a" data-role="header">
-            <a data-role="button" data-ajax="false" href="index.html"
-        class="ui-btn-left" data-icon="back">戻る</a>            
-            <a data-role="button" data-ajax="false" href="home.html"
-               class="ui-btn-right">HALのホーム</a>
-            <h3>編集</h3>
+     <!-- Menu -->
+      <div class="menu"> 
+        <div data-theme="a" data-role="header" id="header">
+	  <img src="img/logoframe.jpg">
+            <a data-ajax="false" href="index.html"><img src="img/back.png"></a>
+            <h3>
+               まとめて投稿
+            </h3>
         </div>
-    <div>
+      </div>
 
         <!-- MAP -->
       <div class="article_map">
@@ -78,7 +79,7 @@
 		<ul>
 			<li><a href="index.html" data-icon="plus" data-theme="c"  data-ajax="false">現在地</a></li>
 			<li><a href="#" data-icon="search" data-theme="c"  data-ajax="false">見つける</a></li>
-		 	<li><a href="#" data-icon="star" data-theme="c" class="ui-btn-active ui-state-persist">作成</a></li>
+		 	<li><a href="#" data-icon="bars" data-theme="c" class="ui-btn-active ui-state-persist">作成</a></li>
 		 	<li><a href="#" data-icon="star" data-theme="c"  data-ajax="false">気に入る</a></li>
 			<li><a href="home.html" data-icon="home" data-theme="c" data-ajax="false" >自分</a></li>
 		</ul>

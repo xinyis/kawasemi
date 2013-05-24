@@ -1,7 +1,7 @@
 
 
 #header{
-  positoin: relative;
+  position: relative;
   background-color: #ffffff;
   border: none;
   height: 60px;
@@ -21,7 +21,10 @@
 }
 
 #header a{
-  position: absolute;
+ width: 75px;
+  left: -1px;
+  background: none;
+  border: none;
 }
 
 #user_pic{
