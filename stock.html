@@ -36,7 +36,6 @@
 
   <div data-role="content">
     <form id="stock_form" name="stock_form" acton="index.html" data-ajax="false">
-      <textarea id="comment_textarea" name="comment" placeholder="メモを残しましょう"></textarea>
       <ul class="memo-stock">
       </ul>
       <div class="ui-grid-a">
@@ -46,12 +45,23 @@
 	  <input type="submit" value="保存" data-theme="b" data-mini="true" data-inline="true">
 	</div>-->
       </div>
-      <div class="camera_button_div">
+ <div class="camera_button_div">
 	<div>
-	  <a id="picture-button" data-role="button" data-ajax="false" href="javascript:void(0);" class="ui-btn-center">写真を撮る</a>
+	  <a id="picture-button" href="#camera-pop" data-rel="popup" data-role="button" data-inline="true" data-theme="c" data-transition="pop" data-position-to="window"><img src="img/camera.png"></a>
+          <div data-role="popup" id="camera-pop" data-theme="c" class="ui-corner-all">
+                       <div style="padding: 5px 5px">
+                       <input type="button" id="pop1" href="#" data-theme="c" value="写真を選択" onClick="location.href='#'"></input>
+　　　　　　　　　　　 <input type="button" id="pop2" href="#" data-theme="c" value="写真を撮る" onClick="location.href='#'"></input>
+                       </div>
+                   </div>
+
 	</div>
 	<div>
-	  <input type="submit" value="保存" data-theme="b">
+
+      <textarea id="comment_textarea" name="comment" placeholder="メモを残しましょう"></textarea>
+
+          <a href="index.html"><input type="submit" value="保存" data-theme="b" width="60px"></a>
+      	 
 	</div>
       </div>
     </form>
