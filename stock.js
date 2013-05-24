@@ -18,7 +18,7 @@
 	    $.cookie("second_visit_flag", "1", {expires:5});
 	}
 
-        $("#picture-button").on('click', function () {
+        $("#pop2").on('click', function () {
             alert('写真をとりました');
 	    if (is_second){
 		$(".memo-stock").append('<li><img src="article_img/sunset.png" /></li>');
