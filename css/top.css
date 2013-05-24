@@ -17,12 +17,14 @@
 }
 
 #map_article_line {
-    position: absolute;
-    top: 223px;
+    position: relative;
+    top: -10px;
     width: 100%;
 }
 
 .carousel {
+    position: relative;
+    top: -17px;
     margin: 7px 0 0 0;
     width: 320px;
     height: 230px;
