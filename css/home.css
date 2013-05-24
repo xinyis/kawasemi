@@ -26,6 +26,15 @@
 
 #user_pic{
   float: left;
+  padding-left:5px;
+  padding-top:2px;
+}
+
+#user-info{
+  padding-top:2px;
+  padding-bottom:2px;
+  border: 1px dashed #FF8800;
+  height:170px;
 }
 
 #user_pic img{
@@ -36,18 +45,35 @@
 
 #user_txt{
   float: right;
-  width: 60%;
+  width: 58%;
+  padding-right:5px;
    
 }
 
 #batch{
   position: relative;
   top: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin: 20px 0;
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top:2px;
+  padding-bottom: 10px;
 }
 
-#map-canvas{
+#map_canvas{
   padding-top: 5px;
+  padding-bottom:0px;
+  margin-top:10px;
+}
+
+div.carousel{
+  padding-top:5px;
+  padding-bottom: 5px;
+  border: 1px dashed #FF8800;
+  width:100%;
+  top:0px;
+}
+
+#map_canvas{
+ padding-top:8px;
+ border: 1px dashed #FF8800;
 }
