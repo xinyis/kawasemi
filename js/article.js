@@ -48,6 +48,7 @@
 			    if (i != current){
 				current = i;
 				setPin(spotElms[i]);
+                                map.setCenter(spotElms[i]);
 			    }
 			    break;
 			}
