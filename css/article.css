@@ -44,6 +44,7 @@
 
 #map_canvas {
     height: 137px;
+    margin-bottom: 10px;
 }
 .article_map{
   position: relative;

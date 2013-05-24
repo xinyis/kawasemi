@@ -48,14 +48,13 @@
 			    if (i != current){
 				current = i;
 				setPin(spotElms[i]);
-                                map.setCenter(spotElms[i]);
-			    }
+                                			    }
 			    break;
 			}
 		    }
 		});
 	    setPin(spotElms[0]);
-        });
+           });
 
 	//$(".article_spot").on('click', setPin(this));
 	
@@ -71,6 +70,9 @@
                 position: latlng,
                 map: map.app
             });
+         
+            map.setCenter(laglng);
+
         }
     });
 })();
