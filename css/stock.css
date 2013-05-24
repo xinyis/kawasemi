@@ -8,28 +8,9 @@
   height: 60px;
 }
 
-#header a{
-  width: 75px;
-  left: -1px;
-  background: none;
-  border: none;
-}
-
 #header img{
   width: 100%;
-}
-
-#header h3{
-  position: absolute;
-  color: #0066ff;
-  top: 9px;
-  text-shadow: none;
-  left: 12px;
-  font-size: 18px;
-}
-
-#header a{
-  position: absolute;
+  background-color: #ffffff;
 }
 
 #comment_textarea {
