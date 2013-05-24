@@ -1,6 +1,7 @@
 
 
 #header{
+  positoin: relative;
   background-color: #ffffff;
   border: none;
   height: 60px;
@@ -25,8 +26,13 @@
 
 #user_pic{
   float: left;
-  width: 30%;
 }
+
+#user_pic img{
+  width: 80px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;}
 
 #user_txt{
   float: right;
@@ -35,8 +41,11 @@
 }
 
 #batch{
+  position: relative;
+  top: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
+  margin: 20px 0;
 }
 
 #map-canvas{
