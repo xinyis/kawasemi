@@ -76,15 +76,35 @@
    width: 20%;
 }
 
-div.ui-btn-inner.ui-li{
-   width: 50px;
-   height:40px;
-
+.navimg {
+  height:30px;
 }
 
-div.ui-btn-text{
-   width:50px;
-   height:40px;
+.ui-navbar li .ui-btn .ui-btn-inner{
+   padding-bottom: 3px;
+}
+
+.ui-navbar li .ui-btn-icon-top .ui-btn-inner{
+   padding-top: 4px;
+}
+
+.ui-btn-active{
+  background: #FFeedd;
+  border: none;
+  text-shadow: none;
+}
+
+.ui-btn-active:visited, .ui-btn-active:hover, .ui-btn-active a.ui-link-inherit{
+  color: #FF8800;
+}
+
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {
+  padding: 0;
+}
+
+.favtext{
+  font-size: 11px;
+  height: 21px;
 }
 
 #popupMenu{
