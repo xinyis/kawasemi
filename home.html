@@ -10,7 +10,7 @@
   
   <!-- Extra Codiqa features -->
   <link rel="stylesheet" href="codiqa.ext.css">
-  <link rel="stylesheet" href="css/top.css">
+  <!--<link rel="stylesheet" href="css/top.css">-->
    <link rel="stylesheet" href="css/home.css">
   <!-- jQuery and jQuery Mobile -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
@@ -34,7 +34,7 @@
   </div>
 
   <div data-role="content">
-    <div id="user-info">
+       <div id="user-info">
        <div id="user_pic">
        <img src="img/user-pic.jpg"></img>
        </div>
@@ -82,23 +82,48 @@
   </div><!--content-->  
     
     <div data-role="footer" data-position="fixed" data-theme="c">		
-	<div data-role="navbar" data-iconpos="top" data-theme="c">
-		<ul>
-			<li><a href="index.html" data-icon="plus" data-ajax="false" data-theme="c">現在地</a></li>
-		        <li><a href="#" data-icon="search" data-theme="c"  data-ajax="false">見つける</a></li>
-		        <li><a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-icon="bars" data-theme="c" data-transition="pop" data-position-to="window">作成</a>
-                        <div data-role="popup" id="popupMenu" data-theme="c" class="ui-corner-all">
-                          <div style="padding: 5px 5px">
-                            <input type="button" id="pop1" href="#" data-theme="c" value="メモ保存" onClick="location.href='stock.html'"></input>
-　　　　　　　　　　　      <input type="button" id="pop2" href="#" data-theme="c" value="記事書く" onClick="location.href='edit.html'"></input>
-                          </div>
-		        </div>
-                        </li>
-		        <li><a href="#" data-icon="star" data-theme="c"  data-ajax="false">気に入る</a></li>
-			<li><a href="home.html" data-icon="home" data-theme="c" class="ui-btn-active ui-state-persist"  data-ajax="false">自分</a></li>
-		</ul>
+	<div data-role="navbar" data-iconpos="top" data-theme="c" class="footnavbar">
+	  <ul>
+	    <li>
+	      <a id="nav-top" href="index.html" data-theme="c" >
+		<div><img src="img/spot.png" class="navimg"></div>
+		現在地
+	      </a>
+	    </li>
+	    <li>
+	      <a id="nav-top" href="#" data-theme="c">
+		<div><img src="img/search.png" class="navimg"></div>
+		見つける
+	      </a>
+	    </li>
+	    <li>
+	      <a id="nav-top" href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="pop" data-position-to="window" data-theme="c">
+		<div><img src="img/post.png" class="navimg"></div>
+		作成
+	      </a>
+              <div data-role="popup" id="popupMenu" data-theme="c" class="ui-corner-all">
+                <div style="padding: 5px 5px">
+                  <input type="button" id="pop1" href="#" data-theme="c" value="メモ保存" onClick="location.href='stock.html'" data-ajax="false"></input>
+ 　　　　　　　　 <input type="button" id="pop2" href="#" data-theme="c" value="記事書く" onClick="location.href='edit.html'" data-ajax="false"></input>
+                </div>
+              </div>
+	    </li>
+	    <li>
+	      <a id="nav-top" href="#" data-theme="c">
+		<div><img src="img/favorite.png" class="navimg"></div>
+		<div class="favtext">お気に入り</div>
+	      </a>
+	    </li>
+	    <li>
+	      <a id="nav-top" href="home.html" data-theme="c" data-ajax="false" class="ui-btn-active ui-state-persist">
+		<div><img src="img/user.png" class="navimg"></div>
+		自分
+	      </a>
+	    </li>
+	  </ul>
 	</div><!-- /navbar -->
-</div><!-- /footer -->
+      </div><!-- /footer -->
+      
 
 
   </div>

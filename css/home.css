@@ -1,10 +1,14 @@
-
-
 #header{
-  position: relative;
   background-color: #ffffff;
   border: none;
   height: 60px;
+}
+
+#header a{
+  width: 75px;
+  left: -1px;
+  background: none;
+  border: none;
 }
 
 #header img{
@@ -13,19 +17,17 @@
 
 #header h3{
   position: absolute;
-  color: #0066ff;
-  top: 9px;
+  color: #0088ff;
+  top: 6px;
   text-shadow: none;
-  left: 12px;
-  font-size: 18px;
+  left: 45px;
+  font-size: 15px;
 }
 
 #header a{
- width: 75px;
-  left: -1px;
-  background: none;
-  border: none;
+  position: absolute;
 }
+
 
 #user_pic{
   float: left;
@@ -79,4 +81,64 @@ div.carousel{
 #map_canvas{
  padding-top:8px;
  border: 1px dashed #FF8800;
+}
+
+.navimg {
+  height:30px;
+}
+
+#map_canvas {
+    height: 170px;
+}
+
+#map_article_line {
+    position: relative;
+    top: -10px;
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    top: -17px;
+    margin: 7px 0 0 0;
+    width: 320px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin:  0;
+}
+
+.carousel ul li {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    backgroundColor: transparent
+}
+.carousel ul li img {
+    height: 230px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    -moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+.carousel ul li .title {
+    margin: 0 2px;
+    padding: 3px 0 0 10px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    z-index: 1000;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: -webkit-gradient(linear,left bottom, left top,
+      from(rgba(0,0,0,0.0)),
+      to(rgba(0,0,0,0.3)));
 }
